@@ -207,6 +207,6 @@ marimo/_lsp/
 __marimo__/
 
 virtual-envs
-/models/*.gguf
-!models/llm/
+app/models/*.gguf
+!app/models/llm/
 
