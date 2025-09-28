@@ -1,0 +1,38 @@
+# FastAPI and ASGI server
+fastapi
+uvicorn[standard]
+
+# Database
+SQLAlchemy
+pydantic
+
+# YouTube download
+yt-dlp
+
+# Audio transcription
+openai-whisper
+
+# Local LLaMA
+llama-cpp-python
+
+# Google Gemini
+google-generativeai
+python-dotenv
+
+# PDF processing
+PyMuPDF
+pdf2image
+pytesseract
+Pillow
+
+# Document conversion
+# (LibreOffice must also be installed system-wide)
+# subprocess calls, no Python package needed
+
+# NLP & text processing
+spacy
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.0/en_core_web_sm-3.7.0-py3-none-any.whl
+tiktoken
+langchain
+
+# Logging / utilities
