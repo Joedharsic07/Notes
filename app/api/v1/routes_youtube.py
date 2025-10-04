@@ -20,7 +20,7 @@ def youtube_notes(request: URLRequest, db=Depends(get_db)):
     cached = get_summary_by_file_hash(db, url_hash)
     if cached:
         return {"notes": cached, "cached": True}
-    processor = YouTubeProcessor(url=request.youtube_url, gemini_api_key=settings.GOOGLE_API_KEY)
+    processor = YouTubeProcessor(url=request.youtube_url)
     try:
         result = processor.process_video()
         save_file_summary(db, url_hash, "youtube_audio", result["structured_notes"])
